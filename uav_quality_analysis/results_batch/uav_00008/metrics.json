@@ -1,0 +1,34 @@
+{
+  "low": {
+    "high_freq_ratio_25": 0.003935456841366724,
+    "high_freq_ratio_33": 0.0018123547344162168,
+    "gradient_entropy": -320.82308673034134,
+    "edge_density": 0.06998654363706266,
+    "orientation_variance_local": 0.046897478013071967
+  },
+  "high": {
+    "high_freq_ratio_25": 0.017419470459074087,
+    "high_freq_ratio_33": 0.013155298786094246,
+    "gradient_entropy": -172.85292166601965,
+    "edge_density": 0.11518646674356017,
+    "orientation_variance_local": 0.03819930073431389
+  },
+  "orientation_variance": {
+    "low": 0.046897478013071967,
+    "high": 0.03819930073431389
+  },
+  "config": {
+    "force_resize_high_to_low": true,
+    "apply_clahe": true,
+    "clahe_clip_limit": 0.01,
+    "stft": {
+      "win_size": 64,
+      "hop": 32
+    },
+    "wavelet": {
+      "wavelet": "db2",
+      "level": 2
+    },
+    "out_dir": "results_batch/uav_00008"
+  }
+}
