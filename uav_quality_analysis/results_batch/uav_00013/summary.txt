@@ -1,0 +1,5 @@
+high_freq_ratio_25: low=0.0020, high=0.0202 (↑)
+high_freq_ratio_33: low=0.0007, high=0.0157 (↑)
+gradient_entropy: low=-344.1015, high=-136.8441 (↑)
+edge_density: low=0.0822, high=0.1512 (↑)
+orientation_variance: low=0.0606, high=0.0364
