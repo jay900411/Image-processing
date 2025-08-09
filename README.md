@@ -8,38 +8,38 @@ Some implementations
 This project compares low-light + low-resolution (simulated) UAV images with high-quality images using various frequency and spatial domain transforms, producing visual and quantitative results.
 
 #### Key Features
-##### -Data Preparation
+##### - Data Preparation
 
--Download clean UAV images from the VisDrone dataset
+- Download clean UAV images from the VisDrone dataset
 
--Simulate degraded versions via downscaling, Gaussian blur, and brightness reduction (LAB L-channel scaling)
+- Simulate degraded versions via downscaling, Gaussian blur, and brightness reduction (LAB L-channel scaling)
 
--Generate pairs.csv mapping high–low image pairs
+- Generate pairs.csv mapping high–low image pairs
 
 ##### -Transform & Analysis
 
--Spatial: original, histogram equalized images
+- Spatial: original, histogram equalized images
 
--Frequency: Fourier Transform (FFT), Discrete Cosine Transform (DCT), Short-Time Fourier Transform (STFT), Ridgelet Transform, Wavelet Transform (multi-level decomposition)
+- Frequency: Fourier Transform (FFT), Discrete Cosine Transform (DCT), Short-Time Fourier Transform (STFT), Ridgelet Transform, Wavelet Transform (multi-level decomposition)
 
--Metrics: high-frequency energy ratio, gradient entropy, brightness/contrast stats
+- Metrics: high-frequency energy ratio, gradient entropy, brightness/contrast stats
 
-##### -Batch Processing
+##### - Batch Processing
 
--Save all transformed images, wavelet coefficient maps, metrics (metrics.json), and summaries per image pair
+- Save all transformed images, wavelet coefficient maps, metrics (metrics.json), and summaries per image pair
 
--Auto-generate comparison panels for side-by-side visual inspection
+- Auto-generate comparison panels for side-by-side visual inspection
 
--Optional PDF report compiling all panels
+- Optional PDF report compiling all panels
 
 #### Workflow
--Download & Prepare Data
+- Download & Prepare Data
 
 python fetch_and_prepare.py --num 80 --downscale 0.5 --blur 1.2 --L-scale 0.7
--Run Batch Analysis
+- Run Batch Analysis
 
 python main_batch.py --pairs-csv data/pairs.csv --out-root results_batch
--Generate Comparison Panels
+- Generate Comparison Panels
 
 python make_panels.py --root results_batch
 
