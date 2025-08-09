@@ -1,0 +1,7 @@
+numpy>=1.23
+scipy>=1.10
+scikit-image>=0.24
+matplotlib>=3.7
+imageio>=2.31
+PyWavelets>=1.4
+deeplake>=4.2
