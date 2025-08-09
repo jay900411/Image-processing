@@ -1,6 +1,11 @@
 # Image-processing
 Some implementations
 
+### `quality_analysis`
+
+Comparing high and low resolution frequency differences under various conversions.
+
+
 ### 1. `channel_analysis_and_enhancement.py`
 
 Covers basic color and geometric processing on the image `balloons.jpg`.
